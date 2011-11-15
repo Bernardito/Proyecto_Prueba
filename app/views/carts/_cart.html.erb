@@ -1,0 +1,22 @@
+  <%#contenedor de campo dentro del layout y lo que se muev al partial lo que esta adentro %>
+
+  <h3> <%= message %> </h3>
+
+  <ul id="cart">
+        <%#  <% @cart.line_items.each do |line_items| %>
+        <% cart.line_items.each do |line_items| %>
+            <li>
+                                <%= line_items.smart.name %>
+                                |
+                                <%= line_items.smart.price %>
+            </li>
+           <% end %>
+
+    </ul>
+
+    <div> Total =$ <%= cart.total_amount %>  </div>
+
+    <%#  <div> Total =$  <% @cart.total_amount <h3>  </div>   %>
+
+
+

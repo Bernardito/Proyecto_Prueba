@@ -1,0 +1,29 @@
+<%#alert(1000)
+
+    1) buscar el elemento html contenedor del carrito
+    2) modificar el html de ese elemnto
+
+    %>
+
+// 1
+// jQuery('#cart').html("Se ha agrego el producto");
+
+<%
+ cart_html = render @cart, :message => 'carrito de compras'
+ %>
+
+jQuery('#cart').html("<%= escape_javascript(cart_html) %> ");
+
+// procedimiento java script
+jQuery('#cart').animate(
+        {opacity: 0.20},
+        2000, // milisegundos
+        function() {
+            jQuery('#cart').animate(
+                    {opacity : 1},
+                    3000
+            );
+        }
+);
+
+

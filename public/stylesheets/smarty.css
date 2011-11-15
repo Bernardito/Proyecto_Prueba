@@ -1,0 +1,44 @@
+.clear {
+    clear: both
+}
+
+div#smarts .image {
+    border: solid #0000ff 5px;
+    float: left;
+    width: 30%;
+}
+
+div#smarts .content {
+    color: blue;
+    float: left;
+    width: 80%;
+}
+div#smarts .price {
+
+    float: left;
+    width: 10%;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    vertical-align: baseline;
+}
+
+div#smarts .content h2 {
+    margin-top: 0
+}
+       <%# Es la columna del medio     %>
+#columns #side {
+    float: left;
+    width: 60%;
+
+}
+
+#columns #side a {
+    display: block;
+
+}
+
+#columns #main{
+    float: left;
+    width: 85%;
+}
